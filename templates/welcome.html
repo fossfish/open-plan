@@ -1,0 +1,18 @@
+{{ define "content" }}
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>{{printf "%s" .Title}}!</h1>
+
+    <p>
+        {{printf "%s" .Message}}!
+    </p>
+
+</div>
+
+{{ end }}
+
+{{ define "head" }}
+  <!--Show ability to set title with the same data-->
+  <title>{{printf "%s" .Title}}!</title>
+{{ end }}
